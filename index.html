@@ -41,7 +41,7 @@
 <body>
 
 <h1>Privacy Policy for Foosoc App</h1>
-<p class="last-updated">Last Updated: June 14, 2026</p>
+<p class="last-updated">Last Updated: June 21, 2026</p>
 
 <h2>1. Introduction</h2>
 <p>
@@ -85,6 +85,7 @@ Foosoc does not upload player photos to Foosoc-operated servers.
 <ul>
     <li>Provide core match tracking and team management features.</li>
     <li>Store match history locally on the device.</li>
+    <li>Allow optional backup and restore of your app data on your device when you choose to use Download Data or Import Data in Settings.</li>
     <li>Improve performance, reliability, and usability.</li>
     <li>Display advertisements (banner, interstitial, and native formats) through Google AdMob.</li>
     <li>Diagnose and fix crashes through Firebase Crashlytics.</li>
@@ -103,18 +104,33 @@ Foosoc does not upload player photos to Foosoc-operated servers.
 <h3>4.2 Data Retention</h3>
 <ul>
     <li>Data remains on the device until you delete it within the app, uninstall the app, or clear app data.</li>
+    <li>Backup files you export to your device remain until you delete them from your file manager or storage.</li>
 </ul>
 
-<h3>4.3 Android Backup</h3>
+<h3>4.3 Android System Backup</h3>
 <p>
 If you have Android backup enabled on your device, your app data may be included in your Google account device backup.
 This is controlled by your Android system settings, not by Foosoc.
+This is separate from Foosoc's optional Download Data and Import Data features described in Section 4.5.
 </p>
 
 <h3>4.4 Security</h3>
 <ul>
     <li>Reasonable technical measures are used to protect locally stored data.</li>
     <li>Foosoc does not operate its own servers and does not upload your match, team, or player data to Foosoc.</li>
+</ul>
+
+<h3>4.5 Backup, Export &amp; Import (Optional)</h3>
+<p>
+Foosoc offers optional backup and restore features so you can keep a copy of your data on your device, for example after reinstalling the app or changing phones.
+</p>
+<ul>
+    <li><strong>Download Data:</strong> You can export a backup file from <strong>Settings (gear icon) &gt; Download Data</strong>. The file is saved on your device, typically in the <strong>Download/FooSoc</strong> folder, as a <strong>.foosoc</strong> file.</li>
+    <li><strong>Automatic backup:</strong> After your first successful manual export, Foosoc may automatically save updated backup files to the same folder when you leave the app. This only happens after you have used Download Data at least once.</li>
+    <li><strong>Import Data:</strong> You can restore from a <strong>.foosoc</strong> backup file using <strong>Settings &gt; Import Data</strong>. Import is performed on your device only. Backup files are not uploaded to Foosoc-operated servers.</li>
+    <li><strong>What is included:</strong> Backup files may contain your matches, teams, player statistics, optional player photos, and in-progress match state saved locally in the app.</li>
+    <li><strong>Not encrypted:</strong> Backup files are <strong>not encrypted</strong>. Anyone with access to the file, or to apps or services you share it with, may be able to read its contents.</li>
+    <li><strong>Your control:</strong> You choose when to export or import data. You are responsible for protecting backup files on your device and for any copies you create, move, or share.</li>
 </ul>
 
 <h2>5. Data Sharing</h2>
@@ -150,11 +166,17 @@ Foosoc does not sell, rent, or trade user data.
         <a href="https://www.api-football.com/privacy">API-Football Privacy Policy</a>
     </li>
 </ul>
+<p>
+Foosoc's backup and import features do not send your backup files to Foosoc or to the third-party services listed above.
+</p>
 
 <h3>5.3 Sharing via Android Share Feature</h3>
 <p>
 If you choose to share a match result or player profile from within the app, the content is shared through your device's standard share menu to apps you select (such as messaging or social apps).
 Foosoc does not control how those third-party apps handle shared content.
+</p>
+<p>
+If you copy, move, email, or otherwise share a <strong>.foosoc</strong> backup file outside the app, Foosoc does not control how those third-party apps or services handle that file.
 </p>
 
 <h3>5.4 Legal Disclosure</h3>
@@ -179,7 +201,7 @@ They do not receive your match, team, or player names stored locally in the app 
 
 <h3>6.3 User Controls</h3>
 <ul>
-    <li>You can update ad consent choices at any time from <strong>Settings (gear icon) &gt; Privacy &amp; Consent &gt; Update Ad Consent Settings</strong> in the app.</li>
+    <li>You can update ad consent choices at any time from <strong>Settings (gear icon) &gt; Update Ad Consent Settings</strong> in the app.</li>
     <li>You can reset or delete your Advertising ID via Android device settings.</li>
     <li>You can opt out of personalized ads through Android system settings.</li>
     <li>You can visit <a href="https://foosoc.com">foosoc.com</a> for general app information.</li>
@@ -190,7 +212,10 @@ They do not receive your match, team, or player names stored locally in the app 
     <li>Users can edit or delete player and match data within the app.</li>
     <li>Player photos can be removed or changed at any time.</li>
     <li>All locally stored data can be removed by uninstalling the app or clearing app data.</li>
-    <li>Advertising consent can be changed at any time through the in-app Privacy &amp; Consent menu.</li>
+    <li>You can export a copy of your data at any time using <strong>Settings &gt; Download Data</strong>.</li>
+    <li>You can restore data from a backup file using <strong>Settings &gt; Import Data</strong>.</li>
+    <li>Exported backup files can be deleted at any time from your device's file manager or Downloads folder.</li>
+    <li>Advertising consent can be changed at any time through the in-app Settings menu.</li>
 </ul>
 
 <h2>8. GDPR &amp; EEA Users</h2>
@@ -204,6 +229,7 @@ Consent for personalized advertising is requested where required through Google'
 </p>
 <p>
 Your match, team, and player data entered in the app is stored locally on your device and is not uploaded to Foosoc-operated servers.
+Backup export and import are optional features that keep your data on your device unless you choose to copy or share backup files elsewhere.
 Technical data processed by Google (AdMob, Firebase, UMP) may be transferred internationally in accordance with Google's data protection policies.
 </p>
 
@@ -215,6 +241,10 @@ The app does not require account creation and does not knowingly collect real-wo
 <p>
 All player names, photos, and match details are entered voluntarily by the user and are stored locally on the device.
 Foosoc does not encourage the entry of real personal information, especially for minors.
+</p>
+<p>
+If you export a backup file, it may contain information you entered in the app, including optional player photos.
+You should protect backup files accordingly, especially on devices used by children.
 </p>
 <p>
 Advertising shown in the app is served by Google AdMob and is intended to comply with Google Play Families Policy requirements,
