@@ -41,7 +41,7 @@
 <body>
 
 <h1>Privacy Policy for Foosoc App</h1>
-<p class="last-updated">Last Updated: June 21, 2026</p>
+<p class="last-updated">Last Updated: November 6, 2026</p>
 
 <h2>1. Introduction</h2>
 <p>
@@ -76,7 +76,8 @@ Foosoc does not upload player photos to Foosoc-operated servers.
 <ul>
     <li><strong>Advertising ID:</strong> Collected by Google AdMob for ad serving and measurement.</li>
     <li><strong>Device Information:</strong> Device type, operating system version, and basic diagnostics.</li>
-    <li><strong>App Usage Data:</strong> Anonymous usage events collected by Firebase Analytics.</li>
+    <li><strong>App Usage Data:</strong> Anonymous usage events collected by Firebase Analytics and PostHog (see Section 6.3).</li>
+    <li><strong>Installation ID:</strong> A random identifier created on your device by PostHog to group anonymous usage events from the same installation. It is not linked to your name, email, Google account, or Advertising ID.</li>
     <li><strong>Crash &amp; Performance Data:</strong> Anonymous crash reports and stack traces collected by Firebase Crashlytics to improve app stability.</li>
     <li><strong>Consent Choices:</strong> Advertising consent preferences managed through Google's User Messaging Platform (UMP), where required by law.</li>
 </ul>
@@ -90,6 +91,7 @@ Foosoc does not upload player photos to Foosoc-operated servers.
     <li>Display advertisements (banner, interstitial, and native formats) through Google AdMob.</li>
     <li>Diagnose and fix crashes through Firebase Crashlytics.</li>
     <li>Understand general app usage through Firebase Analytics.</li>
+    <li>Understand which features are used, and how, through PostHog, so we can improve them.</li>
 </ul>
 
 <h2>4. Data Storage &amp; Security</h2>
@@ -161,6 +163,11 @@ Foosoc does not sell, rent, or trade user data.
         <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
     </li>
     <li>
+        <strong>PostHog:</strong> Product analytics service that processes anonymous app usage events (such as which screens and features are used), device information, and IP address on our behalf.
+        Data is stored on PostHog's EU servers. See Section 6.3 for details.
+        <a href="https://posthog.com/privacy">PostHog Privacy Policy</a>
+    </li>
+    <li>
         <strong>API-Football:</strong> Used to fetch live football match scores, fixtures, and related sports data.
         This service may receive information sent by your device, including your IP address.
         <a href="https://www.api-football.com/privacy">API-Football Privacy Policy</a>
@@ -199,9 +206,36 @@ These services collect technical and usage data to help improve the app.
 They do not receive your match, team, or player names stored locally in the app unless such data is included in a crash log by technical necessity.
 </p>
 
-<h3>6.3 User Controls</h3>
+<h3>6.3 Product Analytics (PostHog)</h3>
+<p>
+Foosoc uses PostHog, a product analytics service, to understand which features are used and how the app can be improved.
+PostHog data is stored on PostHog's EU Cloud, on servers located in the European Union.
+</p>
+<p>The following may be sent to PostHog:</p>
+<ul>
+    <li><strong>App usage events:</strong> For example, opening the app, viewing a screen, starting, ending, or saving a match, recording or undoing a match event (such as a goal), creating, importing, or sharing a team, exporting or restoring a backup, and unlocking extra team slots.</li>
+    <li><strong>Event details:</strong> Information that does not identify anyone, such as match length, number of players, formation, total goals, number of events recorded, and whether a team was shared by QR code or file.</li>
+    <li><strong>Technical information:</strong> App version, device manufacturer and model, Android version, language, time zone, screen size, and network type.</li>
+    <li><strong>Installation ID:</strong> A random identifier created on your device to group events from the same installation. It is reset if you clear app data or reinstall the app.</li>
+    <li><strong>IP address:</strong> Like any internet service, PostHog receives your device's IP address when data is sent. PostHog may use it to estimate an approximate location (such as country and city). Foosoc does not use it to identify you.</li>
+</ul>
+<p>
+PostHog does <strong>not</strong> receive player names, team names, photos, tournament details, or the contents of your matches or backup files.
+Foosoc does not identify you in PostHog, does not link PostHog data to your Advertising ID, and does not use PostHog to record your screen or sessions.
+</p>
+<p>
+PostHog usage data is used only to improve the app and is not used for advertising.
+It is automatically deleted by PostHog at the end of the data retention period of our PostHog plan (currently 1 year).
+</p>
+<p>
+You can stop sending usage data to PostHog at any time by turning off <strong>Settings (gear icon) &gt; Share anonymous usage data</strong>.
+This setting is on by default.
+</p>
+
+<h3>6.4 User Controls</h3>
 <ul>
     <li>You can update ad consent choices at any time from <strong>Settings (gear icon) &gt; Update Ad Consent Settings</strong> in the app.</li>
+    <li>You can turn off anonymous usage data sent to PostHog from <strong>Settings (gear icon) &gt; Share anonymous usage data</strong>.</li>
     <li>You can reset or delete your Advertising ID via Android device settings.</li>
     <li>You can opt out of personalized ads through Android system settings.</li>
     <li>You can visit <a href="https://foosoc.com">foosoc.com</a> for general app information.</li>
@@ -216,6 +250,7 @@ They do not receive your match, team, or player names stored locally in the app 
     <li>You can restore data from a backup file using <strong>Settings &gt; Import Data</strong>.</li>
     <li>Exported backup files can be deleted at any time from your device's file manager or Downloads folder.</li>
     <li>Advertising consent can be changed at any time through the in-app Settings menu.</li>
+    <li>Anonymous usage data sent to PostHog can be turned off at any time with <strong>Settings &gt; Share anonymous usage data</strong>.</li>
 </ul>
 
 <h2>8. GDPR &amp; EEA Users</h2>
@@ -232,6 +267,12 @@ Your match, team, and player data entered in the app is stored locally on your d
 Backup export and import are optional features that keep your data on your device unless you choose to copy or share backup files elsewhere.
 Technical data processed by Google (AdMob, Firebase, UMP) may be transferred internationally in accordance with Google's data protection policies.
 </p>
+<p>
+Anonymous usage data sent to PostHog is processed on the basis of our legitimate interest in understanding how the app is used and improving it.
+This data is stored in the EU and is not linked to your name, email, or account, so we usually cannot find or single out your data in response to a request.
+You can object to this processing at any time by turning off <strong>Share anonymous usage data</strong> in the app's Settings, which stops further data from being sent.
+For any privacy question or request, contact us using the details in Section 12.
+</p>
 
 <h2>9. Children &amp; Families Compliance</h2>
 <p>
@@ -241,6 +282,9 @@ The app does not require account creation and does not knowingly collect real-wo
 <p>
 All player names, photos, and match details are entered voluntarily by the user and are stored locally on the device.
 Foosoc does not encourage the entry of real personal information, especially for minors.
+</p>
+<p>
+Anonymous usage data sent to PostHog does not include player names, team names, photos, or the Advertising ID.
 </p>
 <p>
 If you export a backup file, it may contain information you entered in the app, including optional player photos.
@@ -256,9 +300,12 @@ including the use of appropriate ad content and, where applicable, non-personali
 Foosoc does not operate its own servers and does not upload your match, team, or player data to Foosoc.
 </p>
 <p>
-However, third-party services used by the app (Google AdMob, Google Firebase Analytics, Google Firebase Crashlytics, Google UMP, and API-Football)
+However, third-party services used by the app (Google AdMob, Google Firebase Analytics, Google Firebase Crashlytics, Google UMP, PostHog, and API-Football)
 may process data on servers located outside your country, including the United States.
 These transfers are governed by each provider's privacy policy and applicable data protection safeguards.
+</p>
+<p>
+PostHog data is stored on servers in the European Union. PostHog, Inc. is based in the United States and may access this data under its Data Processing Agreement and Standard Contractual Clauses.
 </p>
 
 <h2>11. Changes to This Policy</h2>
